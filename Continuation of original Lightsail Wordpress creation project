@@ -1,10 +1,10 @@
 # AWS Lightsail and EFS Integration
 
-This repository provides a step-by-step guide to connect AWS Lightsail instances to an Amazon Elastic File System (EFS), allowing instances to share a common file system across Availability Zones (AZs).
+This repository is a continuation of the [AWS Lightsail WordPress](https://github.com/suksesnwu/AWS-Lightsail-WordPress/blob/main/README.md) project. It provides a step-by-step guide to connect AWS Lightsail instances to an Amazon Elastic File System (EFS), allowing instances to share a common file system across Availability Zones (AZs).
 
 ## Project Overview
 
-The project involves:
+Building on the initial setup from the AWS Lightsail WordPress project, this guide focuses on:
 - Setting up a VPC peering connection between Lightsail and the default VPC.
 - Creating an EFS file system.
 - Configuring EFS mount targets in each AZ.
@@ -22,7 +22,7 @@ The project involves:
 
 ### Step 1: Peer Lightsail VPC with Default VPC
 1. Peer the Lightsail VPC with the default VPC to enable communication.
-    ```bash
+    ```
     aws lightsail peer-vpc
     ```
 
